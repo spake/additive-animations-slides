@@ -41,14 +41,14 @@ URL: https://code.google.com/p/io-2012-slides
   <slide>
     <hgroup>
       <h2>Animations on the web</h2>
-      <h3>CSS Transitions</h3>
+      <h3>A long time ago...</h3>
     </hgroup>
     <article>
       <ul>
-        <li>Simple way to change property values smoothly</li>
+        <li>CSS values could be changed, but not smoothly</li>
       </ul>
       <pre class="prettyprint" data-lang="CSS">
-.button { background-color: darkblue; transition: background-color 1s; }
+.button { background-color: darkblue; }
 .button:hover { background-color: deepskyblue; }</pre>
       <style>
         .button {
@@ -62,6 +62,30 @@ URL: https://code.google.com/p/io-2012-slides
           color: #fff;
         }
 
+        .dumb-button:hover {
+          background-color: deepskyblue;
+        }
+      </style>
+
+      <div class="button dumb-button">
+        Button
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Animations on the web</h2>
+      <h3>CSS Transitions</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Simple way to change property values smoothly</li>
+      </ul>
+      <pre class="prettyprint" data-lang="CSS">
+.button { background-color: darkblue; transition: background-color 1s; }
+.button:hover { background-color: deepskyblue; }</pre>
+      <style>
         .transition-button {
           transition: background-color 1s;
         }
@@ -283,6 +307,39 @@ box.animate([
         box3Slider.oninput = function() {
           anim3.pause();
           anim3.currentTime = box3Slider.value;
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>A motivating example</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: <span id="box3BValue">100</span>px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '0px', composite: 'add'},
+  {left: '400px', composite: 'add'},
+  {left: '0px', composite: 'add'}
+], 1000);
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box3B">
+        </div>
+      </div>
+      <input type="range" class="box-slider" id="box3BSlider" min="0" max="900" value="100">
+      <script>
+        box3B.onmousedown = function() {
+          box3B.animate([{left: '0px', composite: 'add'}, {left: '400px', composite: 'add'}, {left: '0px', composite: 'add'}], {duration: 1000});
+        }
+
+        box3BSlider.oninput = function() {
+          box3B.style.left = box3BSlider.value + 'px';
+          box3BValue.innerText = box3BSlider.value;
         }
       </script>
     </article>
