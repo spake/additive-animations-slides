@@ -177,7 +177,7 @@ element.animate([
 
   <slide>
     <hgroup>
-      <h2>Additive Animations</h2>
+      <h2>Additive animations</h2>
       <h3>A motivating example</h3>
     </hgroup>
     <article>
@@ -188,52 +188,7 @@ box.animate([
   {left: '100px'},
   {left: '500px'},
   {left: '100px'}
-], 2000);
-&lt;/script&gt;</pre>
-      <style>
-        .box-container {
-          position: relative;
-          width: 100%;
-          height: 130px;
-          background-color: #eee;
-          border: 1px solid black;
-        }
-
-        .box {
-          width: 100px;
-          height: 100px;
-          margin-top: 15px;
-          background-color: deepskyblue;
-
-          position: absolute;
-          left: 100px;
-        }
-      </style>
-      <div class="box-container">
-        <div class="box" id="box1"></div>
-      </div>
-      <script>
-        box1.onmousedown = function() {
-          box1.animate([{left: '100px'}, {left: '500px'}, {left: '100px' }], {duration: 2000});
-        }
-      </script>
-    </article>
-  </slide>
-  
-  <slide>
-    <hgroup>
-      <h2>Additive Animations</h2>
-      <h3>A motivating example</h3>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="HTML">
-&lt;style&gt; #box { left: 200px; } &lt;/style&gt;
-&lt;script&gt;
-box.animate([
-  {left: '200px'},
-  {left: '600px'},
-  {left: '200px'}
-], 2000);
+], 1000);
 &lt;/script&gt;</pre>
       <style>
         .box-container {
@@ -257,13 +212,73 @@ box.animate([
         #box2, #box3 {
           left: 200px;
         }
+
+        #box8, #box9, #box10A, #box10B, #box10C {
+          left: 0px;
+        }
+
+        #box11 {
+          left: 150px;
+        }
+
+        .box-slider {
+          width: 900px;
+          left: 50px;
+          position: relative;
+        }
       </style>
+      <div class="box-container">
+        <div class="box" id="box1"></div>
+      </div>
+      <input type="range" class="box-slider" id="box1Slider" min="0" max="1000" value="0">
+      <script>
+        var anim1 = box1.animate([{left: '100px'}, {left: '500px'}, {left: '100px' }], {duration: 1000});
+        anim1.pause();
+        anim1.currentTime = 0;
+
+        box1.onmousedown = function() {
+          anim1.play();
+        }
+
+        box1Slider.oninput = function() {
+          anim1.pause();
+          anim1.currentTime = box1Slider.value;
+        }
+      </script>
+    </article>
+  </slide>
+  
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>A motivating example</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 200px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '200px'},
+  {left: '600px'},
+  {left: '200px'}
+], 1000);
+&lt;/script&gt;</pre>
       <div class="box-container">
         <div class="box" id="box2"></div>
       </div>
+      <input type="range" class="box-slider" id="box2Slider" min="0" max="1000" value="0">
       <script>
+        var anim2 = box2.animate([{left: '200px'}, {left: '600px'}, {left: '200px' }], {duration: 1000});
+        anim2.pause();
+        anim2.currentTime = 0;
+
         box2.onmousedown = function() {
-          box2.animate([{left: '200px'}, {left: '600px'}, {left: '200px' }], {duration: 2000});
+          anim2.play();
+        }
+
+        box2Slider.oninput = function() {
+          anim2.pause();
+          anim2.currentTime = box2Slider.value;
         }
       </script>
     </article>
@@ -271,7 +286,7 @@ box.animate([
 
   <slide>
     <hgroup>
-      <h2>Additive Animations</h2>
+      <h2>Additive animations</h2>
       <h3>A motivating example</h3>
     </hgroup>
     <article>
@@ -282,19 +297,349 @@ box.animate([
   {left: '0px', composite: 'add'},
   {left: '400px', composite: 'add'},
   {left: '0px', composite: 'add'}
-], 2000);
+], 1000);
 &lt;/script&gt;</pre>
       <div class="box-container">
         <div class="box" id="box3"></div>
       </div>
+      <input type="range" class="box-slider" id="box3Slider" min="0" max="1000" value="0">
       <script>
+        var anim3 = box3.animate([{left: '0px', composite: 'add'}, {left: '400px', composite: 'add'}, {left: '0px', composite: 'add'}], {duration: 1000});
+        anim3.pause();
+        anim3.currentTime = 0;
+
         box3.onmousedown = function() {
-          box3.animate([{left: '0px', composite: 'add'}, {left: '400px', composite: 'add'}, {left: '0px', composite: 'add'}], {duration: 2000});
+          anim3.play();
+        }
+
+        box3Slider.oninput = function() {
+          anim3.pause();
+          anim3.currentTime = box3Slider.value;
         }
       </script>
     </article>
   </slide>
 
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>Responding to changes</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: <span id="box4Value">100</span>px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '-50px', composite: 'add'},
+  {left: '50px', composite: 'add'}
+], {duration: 500, iterations: Infinity, direction: 'alternate',
+    easing: 'ease-in-out'});
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box4">
+        </div>
+      </div>
+      <input type="range" class="box-slider" id="box4Slider" min="0" max="900" value="100">
+      <script>
+        box4.animate([
+          {left: '-50px', composite: 'add'},
+          {left: '50px', composite: 'add'}
+        ], {duration: 500, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out'});
+
+        box4Slider.oninput = function() {
+          box4.style.left = box4Slider.value + 'px';
+          box4Value.innerText = box4Slider.value;
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>Stacking animations</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 0px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '0px', composite: 'replace'},
+  {left: '800px', composite: 'replace'},
+], 5000);
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box8">
+        </div>
+      </div>
+      <script>
+        box8.onmousedown = function() {
+          box8.animate([{left: '0px', composite: 'replace'}, {left: '800px', composite: 'replace'}], 5000);
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>Stacking animations</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 0px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '-50px', composite: 'add'},
+  {left: '50px', composite: 'add'},
+], {duration: 500, iterations: 10, direction: 'alternate',
+    easing: 'ease-in-out'});
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box9">
+        </div>
+      </div>
+      <script>
+        box9.onmousedown = function() {
+          box9.animate([
+            {left: '-50px', composite: 'add'},
+            {left: '50px', composite: 'add'},
+          ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out'});
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>Stacking animations</h3>
+    </hgroup>
+    <article>
+      <style>
+        .three-box-container {
+          text-align: center;
+          font-size: 50px;
+          font-weight: bold;
+        }
+      </style>
+
+      <div class="three-box-container">
+        <div class="box-container">
+          <div class="box" id="box10A">
+          </div>
+        </div>
+        +
+        <div class="box-container">
+          <div class="box" id="box10B">
+          </div>
+        </div>
+        =
+        <div class="box-container">
+          <div class="box" id="box10C">
+          </div>
+        </div>
+      </div>
+      <script>
+        box10A.animate([{left: '0px', composite: 'replace'}, {left: '800px', composite: 'replace'}], {duration: 5000, iterations: Infinity});
+        box10C.animate([{left: '0px', composite: 'replace'}, {left: '800px', composite: 'replace'}], {duration: 5000, iterations: Infinity});
+
+        box10B.animate([
+          {left: '-50px', composite: 'add'},
+          {left: '50px', composite: 'add'},
+        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+        box10C.animate([
+          {left: '-50px', composite: 'add'},
+          {left: '50px', composite: 'add'},
+        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Existing Web Animations implementation</h2>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="JavaScript">
+// Note that composite: 'replace' is implicit
+box.animate([{left: '100px'}, {left: '200px'}], 1000);</pre>
+      <ul>
+        <li>Each property in each pair of keyframes is represented by an <code>Interpolation</code></li>
+        <li>
+          <code>Interpolation</code>s go through 3 stages:
+          <ul>
+            <li>Creation</li>
+            <li>Sampling</li>
+            <li>Application</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Existing Web Animations implementation</h2>
+      <h3>Creation</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="JavaScript">
+box.animate([{left: '100px'}, {left: '200px'}], 1000);
+box.animate([{left: '0px'}, {left: '300px'}], 1000);</pre>
+      <ul>
+        <li>
+          An <code>Interpolation</code> is generated for each property in each pair of keyframes
+          <ul>
+            <li>The subclass of <code>Interpolation</code> that's used is dependent on the types of the values (here, it's <code>LengthStyleInterpolation</code>)</li>
+            <li>The from and to <code>CSSValue</code>s are converted into <code>InterpolableValue</code>s, a minimal representation that we can easily perform calculations on</li>
+            <li>Can be reused every time the animation is rendered</li>
+          </ul>
+        </li>
+      </ul>
+
+      <style>
+        .pipeline-container {
+          text-align: center;
+          padding-bottom: 10px;
+        }
+      </style>
+      <div class="pipeline-container">
+        <img src="images/pipeline-old-1.svg" width="250px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Existing Web Animations implementation</h2>
+      <h3>Sampling</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>A mapping from each property to a single <code>Interpolation</code> (the most recent one) is created</li>
+        <li>The timing fraction is calculated based on the current time</li>
+        <li>The result of interpolation is calculated and stored as an <code>InterpolableValue</code></li>
+      </ul>
+      <div class="pipeline-container">
+        <img src="images/pipeline-old-2.svg" width="500px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Existing Web Animations implementation</h2>
+      <h3>Application</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>The result of interpolation is converted from an <code>InterpolableValue</code> to a <code>CSSValue</code> and applied to the <code>RenderStyle</code>, so the element will be rendered with the new property value</li>
+      </ul>
+      <div class="pipeline-container">
+        <img src="images/pipeline-old-3.svg" width="400px">
+      </div>
+      <div class="box-container">
+        <div class="box" id="box11"></div>
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations implementation</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>
+          Things that need to change:
+          <ul>
+            <li>Since the effects of multiple animations will be taken into account, we should no longer discard all but the most recent <code>Interpolation</code></li>
+            <li><code>InterpolableValue</code>s will need to be added together</li>
+            <li>The underlying value will need to be factored in so it can be added to</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations implementation</h2>
+      <h3>Creation</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint">
+box.animate([{left: '100px', composite: 'add'}, {left: '200px', composite: 'add'}], 1000);
+box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}], 1000);</pre>
+      <ul>
+        <li>
+          <code>Interpolation</code>s are still generated for each property in each pair of keyframes
+          <ul>
+            <li>The from and to composite modes are stored in the <code>Interpolation</code>
+          </ul>
+        </li>
+      </ul>
+
+      <style>
+        .pipeline-container {
+          text-align: center;
+          padding-bottom: 10px;
+        }
+      </style>
+      <div class="pipeline-container">
+        <img src="images/pipeline-new-1.svg" width="350px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations implementation</h2>
+      <h3>Sampling</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>
+          A mapping from each property to a list of <code>Interpolation</code>s is created
+          <ul>
+            <li>This forms the basis of a pipeline, preserving the order in which the <code>Interpolation</code>s will be evaluated and their values accumulated</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="pipeline-container">
+        <img src="images/pipeline-new-2.svg" width="500px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations implementation</h2>
+      <h3>Application</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>If the first interpolation is additive, 
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/chrome-logo-128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Thanks!</h2>
+      <p>hi tim</p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+
+  <!--
   <slide>
     <hgroup>
       <h2>Under the hood</h2>
@@ -453,175 +798,7 @@ box.animate([
       </table>
     </article>
   </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Stacking animations</h2>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="HTML">
-&lt;script&gt;
-box.animate([
-  {left: '0px', composite: 'replace'},
-  {left: '800px', composite: 'replace'},
-], 5000);
-&lt;/script&gt;</pre>
-      <div class="box-container">
-        <div class="box" id="box8">
-        </div>
-      </div>
-      <script>
-        box8.onmousedown = function() {
-          box8.animate([{left: '0px', composite: 'replace'}, {left: '800px', composite: 'replace'}], 5000);
-        }
-      </script>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Stacking animations</h2>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="HTML">
-&lt;script&gt;
-box.animate([
-  {left: '-50px', composite: 'add'},
-  {left: '50px', composite: 'add'},
-], {duration: 500, iterations: 10, direction: 'alternate',
-    easing: 'ease-in-out'});
-&lt;/script&gt;</pre>
-      <div class="box-container">
-        <div class="box" id="box9">
-        </div>
-      </div>
-      <script>
-        box9.onmousedown = function() {
-          box9.animate([
-            {left: '-50px', composite: 'add'},
-            {left: '50px', composite: 'add'},
-          ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out'});
-        }
-      </script>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Stacking animations</h2>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="HTML">
-&lt;script&gt;
-box.animate([
-  {left: '0px', composite: 'replace'},
-  {left: '800px', composite: 'replace'},
-], 5000);
-box.animate([
-  {left: '-50px', composite: 'add'},
-  {left: '50px', composite: 'add'},
-], {duration: 500, iterations: 10, direction: 'alternate',
-    easing: 'ease-in-out'});
-&lt;/script&gt;</pre>
-      <div class="box-container">
-        <div class="box" id="box10">
-        </div>
-      </div>
-      <script>
-        box10.onmousedown = function() {
-          box10.animate([{left: '0px', composite: 'replace'}, {left: '800px', composite: 'replace'}], 5000);
-          box10.animate([
-            {left: '-50px', composite: 'add'},
-            {left: '50px', composite: 'add'},
-          ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out'});
-        }
-      </script>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Existing Web Animations implementation</h2>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="JavaScript">
-box.animate([{left: '100px'}, {left: '200px'}], 1000);</pre>
-      <ul>
-        <li>Each property in each pair of keyframes is represented by an <code>Interpolation</code></li>
-        <li>
-          <code>Interpolation</code>s go through 3 stages:
-          <ul>
-            <li>Creation</li>
-            <li>Interpolation</li>
-            <li>Application</li>
-          </ul>
-        </li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Existing Web Animations implementation</h2>
-      <h3>Creation</h3>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="JavaScript">
-box.animate([{left: '100px', opacity: 0}, {left: '200px', opacity: 1}]);</pre>
-      <ul>
-        <li>
-          A specific subclass of <code>Interpolation</code> is chosen based on the values
-          <ul>
-            <li>In this case, <code>LengthStyleInterpolation</code> and <code>DoubleStyleInterpolation</code>
-          </ul>
-        </li>
-        <li>
-          A list of <code>Interpolation</code>s (and timing data) representing the pair of keyframes is generated
-          <ul>
-            <li>Can be reused every time the animation is rendered</li>
-          </ul>
-        </li>
-      </ul>
-      <pre class="prettyprint">
-[
-  (LengthStyleInterpolation(left, 100px &rarr; 200px), 0ms &rarr; 1000ms),
-  (DoubleStyleInterpolation(opacity, 0 &rarr; 1), 0ms &rarr; 1000ms)
-]</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Existing Web Animations implementation</h2>
-      <h3>Interpolation</h3>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="JavaScript">
-box.animate([{left: '100px'}, {left: '200px'}], 1000);</pre>
-      <ul>
-        <li>A mapping from property to <code>Interpolation</code> is created</li>
-        <li>The timing fraction is calculated based on the current time</li>
-      </ul>
-      <pre class="prettyprint">
-{
-  left: LengthStyleInterpolation(100px &rarr; 200px, t=0.3),
-  opacity: DoubleStyleInterpolation(0 &rarr; 1, t=0.3)
-}</pre>
-    </article>
-  </slide>
-
-  <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/chrome-logo-128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <h2>Thanks!</h2>
-      <p>hi tim</p>
-    </article>
-    <p class="auto-fadein" data-config-contact>
-      <!-- populated from slide_config.json -->
-    </p>
-  </slide>
-
-  <slide class="backdrop"></slide>
+-->
 
 </slides>
 
