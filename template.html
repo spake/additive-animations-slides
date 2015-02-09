@@ -22,39 +22,7 @@ URL: https://code.google.com/p/io-2012-slides
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
   <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
   <script src="js/web-animations.js"></script>
-      
-  <style>
-    .letterbox {
-      width: 100px;
-      height: 100px;
-      margin: 0;
-
-      font-size: 95px;
-      font-weight: bold;
-      text-align: center;
-      display: block;
-      border: 10px solid black;
-
-      background-color: white;
-      color: black;
-
-      float: left;
-    }
-
-    .right-arrow {
-      width: 374px;
-      height: 120px;
-      padding: 0;
-      margin: 0 20px;
-
-      display: block;
-
-      background: url("images/right-arrow.svg");
-      background-size: 374px 120px;
-
-      float: left;
-    }
-  </style>
+  
 </head>
 <body style="opacity: 0">
 
@@ -505,7 +473,7 @@ box.animate([{left: '0px'}, {left: '300px'}], 1000);</pre>
         }
       </style>
       <div class="pipeline-container">
-        <img src="images/pipeline-old-1.svg" width="250px">
+        <img src="images/pipeline-old-1.png" width="250px">
       </div>
     </article>
   </slide>
@@ -522,7 +490,7 @@ box.animate([{left: '0px'}, {left: '300px'}], 1000);</pre>
         <li>The result of interpolation is calculated and stored as an <code>InterpolableValue</code></li>
       </ul>
       <div class="pipeline-container">
-        <img src="images/pipeline-old-2.svg" width="500px">
+        <img src="images/pipeline-old-2.png" width="500px">
       </div>
     </article>
   </slide>
@@ -537,7 +505,7 @@ box.animate([{left: '0px'}, {left: '300px'}], 1000);</pre>
         <li>The result of interpolation is converted from an <code>InterpolableValue</code> to a <code>CSSValue</code> and applied to the <code>RenderStyle</code>, so the element will be rendered with the new property value</li>
       </ul>
       <div class="pipeline-container">
-        <img src="images/pipeline-old-3.svg" width="400px">
+        <img src="images/pipeline-old-3.png" width="400px">
       </div>
       <div class="box-container">
         <div class="box" id="box11"></div>
@@ -570,8 +538,11 @@ box.animate([{left: '0px'}, {left: '300px'}], 1000);</pre>
     </hgroup>
     <article>
       <pre class="prettyprint">
+&lt;style&gt; #box { left: '100px'; } &lt;/style&gt;
+&lt;script&gt;
 box.animate([{left: '100px', composite: 'add'}, {left: '200px', composite: 'add'}], 1000);
-box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}], 1000);</pre>
+box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}], 1000);
+&lt;/script&gt;</pre>
       <ul>
         <li>
           <code>Interpolation</code>s are still generated for each property in each pair of keyframes
@@ -588,7 +559,7 @@ box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}]
         }
       </style>
       <div class="pipeline-container">
-        <img src="images/pipeline-new-1.svg" width="350px">
+        <img src="images/pipeline-new-1.png" width="300px">
       </div>
     </article>
   </slide>
@@ -601,14 +572,15 @@ box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}]
     <article>
       <ul>
         <li>
-          A mapping from each property to a list of <code>Interpolation</code>s is created
+          A mapping from each property to a list of <code>InterpolationPipelineStage</code>s is created
           <ul>
+            <li>Linked list nodes, each containing an <code>Interpolation</code></li>
             <li>This forms the basis of a pipeline, preserving the order in which the <code>Interpolation</code>s will be evaluated and their values accumulated</li>
           </ul>
         </li>
       </ul>
       <div class="pipeline-container">
-        <img src="images/pipeline-new-2.svg" width="500px">
+        <img src="images/pipeline-new-2.png" width="500px">
       </div>
     </article>
   </slide>
@@ -620,8 +592,34 @@ box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}]
     </hgroup>
     <article>
       <ul>
-        <li>If the first interpolation is additive, 
+        <li>
+          If the first interpolation is additive, the underlying value must be added to the pipeline
+          <ul>
+            <li>The underlying value is pulled from the <code>RenderStyle</code> (as a <code>CSSValue</code>), and a constant <code>Interpolation</code> is created from it</li>
+            <li>Since an <code>Interpolation</code> is created from the underlying value, we get the benefits of its representation as an <code>InterpolableValue</code>, such as easy addition</li>
+          </ul>
+        </li>
       </ul>
+      <div class="pipeline-container">
+        <img src="images/pipeline-new-3.png" width="500px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations implementation</h2>
+      <h3>Application</h3>
+    </hgroup>
+    <article>
+      <ul>
+        <li>
+          lol
+        </li>
+      </ul>
+      <div class="pipeline-container">
+        <img src="images/pipeline-new-3.png" width="500px">
+      </div>
     </article>
   </slide>
 
