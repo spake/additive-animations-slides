@@ -322,6 +322,7 @@ box.animate([
       <h3>A motivating example</h3>
     </hgroup>
     <article>
+      <input type="range" class="box-slider" id="box3BSlider" min="0" max="900" value="100">
       <pre class="prettyprint" data-lang="HTML">
 &lt;style&gt; #box { left: <span id="box3BValue">100</span>px; } &lt;/style&gt;
 &lt;script&gt;
@@ -335,7 +336,6 @@ box.animate([
         <div class="box" id="box3B">
         </div>
       </div>
-      <input type="range" class="box-slider" id="box3BSlider" min="0" max="900" value="100">
       <script>
         box3B.onmousedown = function() {
           box3B.animate([{left: '0px', composite: 'add'}, {left: '400px', composite: 'add'}, {left: '0px', composite: 'add'}], {duration: 1000});
@@ -355,6 +355,7 @@ box.animate([
       <h3>Responding to changes</h3>
     </hgroup>
     <article>
+      <input type="range" class="box-slider" id="box4Slider" min="0" max="900" value="100">
       <pre class="prettyprint" data-lang="HTML">
 &lt;style&gt; #box { left: <span id="box4Value">100</span>px; } &lt;/style&gt;
 &lt;script&gt;
@@ -368,7 +369,6 @@ box.animate([
         <div class="box" id="box4">
         </div>
       </div>
-      <input type="range" class="box-slider" id="box4Slider" min="0" max="900" value="100">
       <script>
         box4.animate([
           {left: '-50px', composite: 'add'},
@@ -389,6 +389,7 @@ box.animate([
       <h3>Mixing add and replace keyframes</h3>
     </hgroup>
     <article>
+      <input type="range" class="box-slider" id="box4BSlider" min="0" max="900" value="100">
       <pre class="prettyprint" data-lang="HTML">
 &lt;style&gt; #box { left: <span id="box4BValue">100</span>px; } &lt;/style&gt;
 &lt;script&gt;
@@ -402,7 +403,6 @@ box.animate([
         <div class="box" id="box4B">
         </div>
       </div>
-      <input type="range" class="box-slider" id="box4BSlider" min="0" max="900" value="100">
       <script>
         box4B.onmousedown = function() {
           box4B.animate([
@@ -513,11 +513,11 @@ box.animate([
         box10B.animate([
           {left: '-50px', composite: 'add'},
           {left: '50px', composite: 'add'},
-        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+        ], {duration: 500, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
         box10C.animate([
           {left: '-50px', composite: 'add'},
           {left: '50px', composite: 'add'},
-        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+        ], {duration: 500, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
       </script>
     </article>
   </slide>
@@ -651,6 +651,15 @@ box.animate([
         ], {duration: 200, iterations: Infinity, direction: 'alternate', delay: -100,
             easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
       </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+    </hgroup>
+    <article>
+      <h1>Orbit demo</h1>
     </article>
   </slide>
 
@@ -808,6 +817,7 @@ box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}]
             <li>This forms the basis of a pipeline, preserving the order in which the <code>Interpolation</code>s will be evaluated and their values accumulated</li>
           </ul>
         </li>
+        <li>An 'underlying fraction' is calculated: how much the previous value will contribute to the pipeline stage's result</li>
       </ul>
       <div class="pipeline-container">
         <img src="images/pipeline-new-2.png" width="500px">
@@ -843,7 +853,6 @@ box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}]
     </hgroup>
     <article>
       <ul>
-        <li>An 'underlying fraction' is calculated: how much the previous value will contribute to the pipeline stage's result</li>
         <li><code>InterpolableValue</code>s are passed from each pipeline stage to the next, and combined according to their underlying fraction</li>
       </ul>
       <div class="pipeline-container">
@@ -864,7 +873,7 @@ box.animate([{left: '0px'}, {left: '800px'}], {duration: 5000, iterations: Infin
 box.animate([
   {left: '-50px', composite: 'add'},
   {left: '50px', composite: 'add'},
-], {duration: 500, iterations: 10, direction: 'alternate',
+], {duration: 500, direction: 'alternate',
     easing: 'ease-in-out', iterations: Infinity});
 &lt;/script&gt;</pre>
       <div class="box-container">
@@ -876,7 +885,7 @@ box.animate([
         box10D.animate([
           {left: '-50px', composite: 'add'},
           {left: '50px', composite: 'add'},
-        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+        ], {duration: 500, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
       </script>
     </article>
   </slide>
@@ -896,7 +905,7 @@ box.animate([
         var anim10E_2 = box10E.animate([
           {left: '-50px', composite: 'add'},
           {left: '50px', composite: 'add'},
-        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+        ], {duration: 500, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
 
         anim10E_1.pause();
         anim10E_2.pause();
