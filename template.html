@@ -197,6 +197,10 @@ box.animate([
           margin-top: 30px;
           background-color: deepskyblue;
 
+          color: white;
+          font-size: 50px;
+          text-align: center;
+
           position: absolute;
           left: 100px;
         }
@@ -382,6 +386,43 @@ box.animate([
   <slide>
     <hgroup>
       <h2>Additive animations</h2>
+      <h3>Mixing add and replace keyframes</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: <span id="box4BValue">100</span>px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '0px', composite: 'add'},
+  {left: '800px', composite: 'replace'},
+  {left: '0px', composite: 'add'}
+], 1000);
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box4B">
+        </div>
+      </div>
+      <input type="range" class="box-slider" id="box4BSlider" min="0" max="900" value="100">
+      <script>
+        box4B.onmousedown = function() {
+          box4B.animate([
+            {left: '0px', composite: 'add'},
+            {left: '800px', composite: 'replace'},
+            {left: '0px', composite: 'add'}
+          ], 1000);
+        }
+
+        box4BSlider.oninput = function() {
+          box4B.style.left = box4BSlider.value + 'px';
+          box4BValue.innerText = box4BSlider.value;
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
       <h3>Stacking animations</h3>
     </hgroup>
     <article>
@@ -477,6 +518,138 @@ box.animate([
           {left: '-50px', composite: 'add'},
           {left: '50px', composite: 'add'},
         ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>Demo</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 400px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '-200px', composite: 'add'},
+  {left: '200px', composite: 'add'},
+], {duration: 3000, iterations: Infinity, direction: 'alternate',
+    easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+&lt;/script&gt;</pre>
+      <style>
+        #box100 {
+          left: 400px;
+        }
+      </style>
+      <div class="box-container">
+        <div class="box" id="box100">
+        </div>
+      </div>
+      <script>
+        box100.animate([
+          {left: '-200px', composite: 'add'},
+          {left: '200px', composite: 'add'},
+        ], {duration: 3000, iterations: Infinity, direction: 'alternate', easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>Demo</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 400px; top: -200px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '-200px', composite: 'add'},
+  {left: '200px', composite: 'add'},
+], {duration: 3000, iterations: Infinity, direction: 'alternate',
+    easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+box.animate([
+  {top: '-200px', composite: 'add'},
+  {top: '200px', composite: 'add'},
+], {duration: 3000, iterations: Infinity, direction: 'alternate', delay: -1500,
+    easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+&lt;/script&gt;</pre>
+      <style>
+        #box101 {
+          left: 400px;
+          top: -200px;
+        }
+      </style>
+      <div class="box-container">
+        <div class="box" id="box101">
+        </div>
+      </div>
+      <script>
+        box101.animate([
+          {left: '-200px', composite: 'add'},
+          {left: '200px', composite: 'add'},
+        ], {duration: 3000, iterations: Infinity, direction: 'alternate', easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+        box101.animate([
+          {top: '-200px', composite: 'add'},
+          {top: '200px', composite: 'add'},
+        ], {duration: 3000, iterations: Infinity, direction: 'alternate', delay: -1500,
+            easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive animations</h2>
+      <h3>Demo</h3>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 400px; top: -200px; } &lt;/style&gt;
+&lt;script&gt;
+...
+box.animate([
+  {left: '-50px', composite: 'add'},
+  {left: '50px', composite: 'add'},
+], {duration: 200, iterations: Infinity, direction: 'alternate',
+    easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+box.animate([
+  {top: '-50px', composite: 'add'},
+  {top: '50px', composite: 'add'},
+], {duration: 200, iterations: Infinity, direction: 'alternate', delay: -100,
+    easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+&lt;/script&gt;</pre>
+      <style>
+        #box102 {
+          left: 400px;
+          top: -200px;
+        }
+      </style>
+      <div class="box-container">
+        <div class="box" id="box102">
+        </div>
+      </div>
+      <script>
+        box102.animate([
+          {left: '-200px', composite: 'add'},
+          {left: '200px', composite: 'add'},
+        ], {duration: 3000, iterations: Infinity, direction: 'alternate', easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+        box102.animate([
+          {top: '-200px', composite: 'add'},
+          {top: '200px', composite: 'add'},
+        ], {duration: 3000, iterations: Infinity, direction: 'alternate', delay: -1500,
+            easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+
+        box102.animate([
+          {left: '-50px', composite: 'add'},
+          {left: '50px', composite: 'add'},
+        ], {duration: 200, iterations: Infinity, direction: 'alternate', easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
+        box102.animate([
+          {top: '-50px', composite: 'add'},
+          {top: '50px', composite: 'add'},
+        ], {duration: 200, iterations: Infinity, direction: 'alternate', delay: -100,
+            easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'});
       </script>
     </article>
   </slide>
@@ -612,7 +785,7 @@ box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}]
       <style>
         .pipeline-container {
           text-align: center;
-          padding-bottom: 10px;
+          padding-top: 10px;
         }
       </style>
       <div class="pipeline-container">
@@ -670,13 +843,485 @@ box.animate([{left: '0px', composite: 'add'}, {left: '300px', composite: 'add'}]
     </hgroup>
     <article>
       <ul>
-        <li>
-          lol
-        </li>
+        <li>An 'underlying fraction' is calculated: how much the previous value will contribute to the pipeline stage's result</li>
+        <li><code>InterpolableValue</code>s are passed from each pipeline stage to the next, and combined according to their underlying fraction</li>
       </ul>
       <div class="pipeline-container">
-        <img src="images/pipeline-new-3.png" width="500px">
+        <img src="images/pipeline-new-4.png" width="400px">
       </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive pipeline examples</h2>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 100px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([{left: '0px'}, {left: '800px'}], {duration: 5000, iterations: Infinity});
+box.animate([
+  {left: '-50px', composite: 'add'},
+  {left: '50px', composite: 'add'},
+], {duration: 500, iterations: 10, direction: 'alternate',
+    easing: 'ease-in-out', iterations: Infinity});
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box10D">
+        </div>
+      </div>
+      <script>
+        box10D.animate([{left: '0px', composite: 'replace'}, {left: '800px', composite: 'replace'}], {duration: 5000, iterations: Infinity});
+        box10D.animate([
+          {left: '-50px', composite: 'add'},
+          {left: '50px', composite: 'add'},
+        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive pipeline examples</h2>
+    </hgroup>
+    <article>
+      After 2500ms:
+      <div class="box-container">
+        <div class="box" id="box10E">
+        </div>
+      </div>
+      <script>
+        var anim10E_1 = box10E.animate([{left: '0px', composite: 'replace'}, {left: '800px', composite: 'replace'}], {duration: 5000, iterations: Infinity});
+        var anim10E_2 = box10E.animate([
+          {left: '-50px', composite: 'add'},
+          {left: '50px', composite: 'add'},
+        ], {duration: 500, iterations: 10, direction: 'alternate', easing: 'ease-in-out', iterations: Infinity});
+
+        anim10E_1.pause();
+        anim10E_2.pause();
+        anim10E_1.currentTime = 2500;
+        anim10E_2.currentTime = 2500;
+      </script>
+      <div class="pipeline-container">
+        <img src="images/pipeline-example-1.png" width="400px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive pipeline examples</h2>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 100px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '0px', composite: 'add'},
+  {left: '800px', composite: 'replace'}
+], 1000);
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box4C">
+        </div>
+      </div>
+      <script>
+        box4C.onmousedown = function() {
+          box4C.animate([
+            {left: '0px', composite: 'add'},
+            {left: '800px', composite: 'replace'}
+          ], 1000);
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Additive pipeline examples</h2>
+    </hgroup>
+    <article>
+      After 250ms:
+      <div class="box-container">
+        <div class="box" id="box4D">
+        </div>
+      </div>
+      <script>
+        var anim4D = box4D.animate([
+          {left: '0px', composite: 'add'},
+          {left: '800px', composite: 'replace'}
+        ], 1000);
+
+        anim4D.pause();
+        anim4D.currentTime = 250;
+      </script>
+      <div class="pipeline-container">
+        <img src="images/pipeline-example-2.png" width="500px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Challenges</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Incompatible values</li>
+        <li><code>inherit</code></li>
+        <li>Cubic Bezier easing</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Incompatible values</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>
+          Some properties accept several different types of values, and we can't interpolate between them (nor can we add them)
+          <ul>
+            <li>For example, <code>line-height</code> accepts both lengths and numbers</li>
+          </ul>
+        </li>
+      </ul>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #text { line-height: 2; } &lt;/style&gt;
+&lt;script&gt;
+text.animate([
+  {lineHeight: '30px', composite: 'add'},
+  {lineHeight: '40px', composite: 'add'}
+], 1000);
+&lt;/script&gt;</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Incompatible values</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>How should we handle such a case?</li>
+      </ul>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #text { line-height: 2; } &lt;/style&gt;
+&lt;script&gt;
+text.animate([
+  {lineHeight: '30px', composite: 'add'},
+  {lineHeight: '40px', composite: 'add'}
+], 1000);
+&lt;/script&gt;</pre>
+      <div class="pipeline-container">
+        <img src="images/pipeline-bad-1.png" width="400px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Incompatible values</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>We just ignore attempts to add on incompatible values</li>
+        <li>This behaviour was decided on through discussions, and isn't actually reflected in the spec yet</li>
+      </ul>
+      <div class="pipeline-container">
+        <img src="images/pipeline-bad-2.png" width="500px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2><code>inherit</code></h2>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt;
+  #parent { line-height: 2; }
+  #child { line-height: inherit; }
+&lt;/style&gt;
+&lt;div id="parent"&gt;
+  &lt;div id="child"&gt;
+    Hello, World!
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      <ul>
+        <li>The <code>inherit</code> keyword resolves to the element's parent's value</li>
+        <li>The value (and type) of <code>inherit</code> is only known at apply time</li>
+        <li>
+          The <code>InterpolableValue</code> code path doesn't support <code>inherit</code> yet, so adding with <code>inherit</code> isn't yet possible
+          <ul>
+            <li>The old code path supports <code>inherit</code> by deferring the creation of 'interpolations' using the keyword until apply time</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Cubic Bezier easing</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Cubic Beziers give you a fine level of control over how values are interpolated between</li>
+      </ul>
+      <div>
+        <pre class="prettyprint" data-lang="HTML" style="width: 80%; float: left">
+&lt;style&gt; #box { left: 100px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '100px'},
+  {left: '800px'}
+], {duration: 1000, easing: 'cubic-bezier(.42, 0, .58, 1)'});
+&lt;/script&gt;</pre>
+        <img src="images/ease-in-out.png" width="20%; float: right">
+        <div style="clear: both"></div>
+      </div>
+
+      <div class="box-container">
+        <div class="box" id="box12">
+        </div>
+      </div>
+      <input type="range" class="box-slider" id="box12Slider" min="0" max="1000" value="0">
+      <script>
+        var anim12 = box12.animate([
+            {left: '100px'},
+            {left: '800px'}
+          ], {duration: 1000, easing: 'cubic-bezier(.42, 0, .58, 1)'});
+
+        anim12.pause();
+        anim12.currentTime = 0;
+
+        box12.onmousedown = function() {
+          anim12.play();
+        }
+
+        box12Slider.oninput = function() {
+          anim12.pause();
+          anim12.currentTime = box12Slider.value;
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Cubic Bezier easing</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Cubic Beziers can have 0 or 2 turning points</li>
+      </ul>
+      <div>
+        <pre class="prettyprint" data-lang="HTML" style="width: 80%; float: left">
+&lt;style&gt; #box { left: 100px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '100px'},
+  {left: '800px'}
+], {duration: 1000,
+    easing: 'cubic-bezier(.41, 1.94, .72, -0.91)'});
+&lt;/script&gt;</pre>
+        <img src="images/crazy-bezier.png" width="20%; float: right">
+        <div style="clear: both"></div>
+      </div>
+
+      <div class="box-container">
+        <div class="box" id="box13">
+        </div>
+      </div>
+      <input type="range" class="box-slider" id="box13Slider" min="0" max="1000" value="0">
+      <script>
+        var anim13 = box13.animate([
+            {left: '100px'},
+            {left: '800px'}
+          ], {duration: 1000, easing: 'cubic-bezier(.41, 1.94, .72, -0.91)'});
+
+        anim13.pause();
+        anim13.currentTime = 0;
+
+        box13.onmousedown = function() {
+          anim13.play();
+        }
+
+        box13Slider.oninput = function() {
+          anim13.pause();
+          anim13.currentTime = box13Slider.value;
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Interpolating between incompatible values</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>The defined behaviour is using the first value when t &lt; 0.5, and the second value when t &ge; 0.5</li>
+      </ul>
+
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #box { left: 100px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '100px', fontFamily: 'Verdana'},
+  {left: '800px', fontFamily: 'Courier New'}
+], 1000);
+&lt;/script&gt;</pre>
+      <div class="box-container">
+        <div class="box" id="box14">
+          hi
+        </div>
+      </div>
+      <input type="range" class="box-slider" id="box14Slider" min="0" max="1000" value="0">
+      <script>
+        var anim14 = box14.animate([
+            {left: '100px', fontFamily: 'Verdana'},
+            {left: '800px', fontFamily: 'Courier New'}
+          ], {duration: 1000});
+
+        anim14.pause();
+        anim14.currentTime = 0;
+
+        box14.onmousedown = function() {
+          anim14.play();
+        }
+
+        box14Slider.oninput = function() {
+          anim14.pause();
+          anim14.currentTime = box14Slider.value;
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Cubic Beziers and incompatible values</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>The first value is used when f(t) &lt; 0.5, and the second value when f(t) &ge; 0.5</li>
+        <li>We ideally want to determine the corresponding values of t at creation time</li>
+      </ul>
+
+      <div>
+        <pre class="prettyprint" data-lang="HTML" style="width: 80%; float: left">
+&lt;style&gt; #box { left: 100px; } &lt;/style&gt;
+&lt;script&gt;
+box.animate([
+  {left: '100px', fontFamily: 'Verdana'},
+  {left: '800px', fontFamily: 'Courier New'}
+], {duration: 1000,
+    easing: 'cubic-bezier(.41, 1.94, .72, -0.91)'});
+&lt;/script&gt;</pre>
+        <img src="images/crazy-bezier2.png" width="20%; float: right">
+        <div style="clear: both"></div>
+      </div>
+      <div class="box-container">
+        <div class="box" id="box15">
+          hi
+        </div>
+      </div>
+      <input type="range" class="box-slider" id="box15Slider" min="0" max="1000" value="0">
+      <script>
+        var anim15 = box15.animate([
+            {left: '100px', fontFamily: 'Verdana'},
+            {left: '800px', fontFamily: 'Courier New'}
+          ], {duration: 1000, easing: 'cubic-bezier(.41, 1.94, .72, -0.91)'});
+
+        anim15.pause();
+        anim15.currentTime = 0;
+
+        box15.onmousedown = function() {
+          anim15.play();
+        }
+
+        box15Slider.oninput = function() {
+          anim15.pause();
+          anim15.currentTime = box15Slider.value;
+        }
+      </script>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Cubic Beziers and incompatible values</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>The solution to this problem involved 'partitioning' the Bezier into regions where f(t) &lt; 0.5 and f(t) &ge; 0.5</li>
+        <li>At create time, a constant <code>Interpolation</code> is created for each region</li>
+        <li>When sampling the animation, the appropriate constant <code>Interpolation</code> is chosen and added to the pipeline, enabling addition</li>
+      </ul>
+      <div class="pipeline-container">
+        <img src="images/crazy-bezier2.png" width="250px">
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Cubic Beziers and incompatible values</h2>
+      <h3>Example</h3>
+    </hgroup>
+    <article>
+        <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt; #element { width: 100px; } &lt;/style&gt;
+&lt;script&gt;
+element.animate([
+  {width: 'auto', composite: 'add'},
+  {width: '50px', composite: 'add'}
+], {duration: 1000,
+    easing: 'cubic-bezier(.41, 1.94, .72, -0.91)'});
+&lt;/script&gt;</pre>
+      <div class="pipeline-container">
+        <img src="images/pipeline-auto-1.png" width="350px" style="float: left">
+        <img src="images/pipeline-auto-2.png" width="350px" style="float: right">
+        <div style="clear: both"></div>
+      </div>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Status of additive animations</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>
+          CLs landed
+          <ul>
+            <li>Support for adding and multiplying <code>InterpolableValue</code>s</li>
+            <li>Refactoring of <code>Interpolation</code> creation for partitioning</li>
+            <li>Implementation of cubic Bezier and step timing function partitioning (behind flag)</li>
+            <li>Removal of partitioning flag</li>
+          </ul>
+        </li>
+        <li>
+          CLs up for review
+          <ul>
+            <li>Additive animations for lengths</li>
+          </ul>
+        </li>
+        <li>
+          What's next
+          <ul>
+            <li>Implement additive animations for other types</li>
+            <li>Benchmarking</li>
+            <li>Ship additive animations support</li>
+          </ul>
+        </li>
+      </ul>
     </article>
   </slide>
 

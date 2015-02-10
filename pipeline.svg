@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1052.3622"
-   height="744.09448"
+   width="744.09448"
+   height="2000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="pipeline.svg">
   <defs
      id="defs4">
@@ -199,6 +199,118 @@
          transform="scale(-0.6,-0.6)"
          inkscape:connector-curvature="0" />
     </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-8"
+       style="overflow:visible">
+      <path
+         id="path3907-3"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3841"
+       style="overflow:visible">
+      <path
+         id="path3843"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3845"
+       style="overflow:visible">
+      <path
+         id="path3847"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-5"
+       style="overflow:visible">
+      <path
+         id="path3786-24"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3851"
+       style="overflow:visible">
+      <path
+         id="path3853"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-2"
+       style="overflow:visible">
+      <path
+         id="path3907-5"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5037"
+       style="overflow:visible">
+      <path
+         id="path5039"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.2,0.2)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-6"
+       style="overflow:visible">
+      <path
+         id="path3786-32"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -208,20 +320,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7071068"
-     inkscape:cx="368.69833"
-     inkscape:cy="324.15782"
+     inkscape:cx="128.28203"
+     inkscape:cy="720.13761"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="808"
-     inkscape:window-x="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1147"
+     inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     height="2000px" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -238,10 +351,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-115.8125,243.10856)">
+     transform="translate(-115.8125,1499.0141)">
     <g
        id="g6330"
-       transform="translate(247.5168,-114.5513)">
+       transform="translate(124.48022,-1481.2673)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606">
       <rect
          ry="29.767525"
          y="207.53931"
@@ -249,40 +365,40 @@
          height="115.64579"
          width="406.53577"
          id="rect5538-4"
-         style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <text
          sodipodi:linespacing="125%"
          id="text4201-4"
          y="276.04578"
          x="250.28308"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            y="276.04578"
            x="250.28308"
            id="tspan4203-9"
-           sodipodi:role="line">100px</tspan></text>
+           sodipodi:role="line">0px</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text4201-5-6"
          y="276.04578"
          x="354.24011"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            y="276.04578"
            x="354.24011"
            id="tspan4203-2-6"
-           sodipodi:role="line">200px</tspan></text>
+           sodipodi:role="line">800px</tspan></text>
       <path
          inkscape:connector-curvature="0"
          id="path4230-4"
          d="m 334.7896,265.40061 -66,0 z"
-         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow2Mend)" />
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Mend)" />
       <text
          sodipodi:linespacing="125%"
          id="text5534-2"
          y="305.45496"
          x="416.32996"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            style="font-size:20px"
            y="305.45496"
@@ -294,9 +410,9 @@
          id="text5534-2-1"
          y="237.81821"
          x="248.8866"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-size:20px;-inkscape-font-specification:Sans;text-align:end;text-anchor:end"
+           style="font-size:20px;font-style:normal;text-align:end;text-anchor:end;-inkscape-font-specification:Sans"
            y="237.81821"
            x="248.8866"
            id="tspan5536-1-6"
@@ -306,17 +422,20 @@
          id="text5534-2-1-7"
          y="237.81821"
          x="356.34949"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-size:20px;-inkscape-font-specification:Sans;text-align:start;text-anchor:start"
+           style="font-size:20px;font-style:normal;text-align:start;text-anchor:start;-inkscape-font-specification:Sans"
            y="237.81821"
            x="356.34949"
            id="tspan5536-1-6-6"
-           sodipodi:role="line">add</tspan></text>
+           sodipodi:role="line">replace</tspan></text>
     </g>
     <g
        id="g6316"
-       transform="translate(247.5168,-78.471605)">
+       transform="translate(124.48022,-1443.1877)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606">
       <rect
          ry="29.767525"
          y="347.53925"
@@ -324,40 +443,40 @@
          height="115.64579"
          width="406.53577"
          id="rect5538-4-2"
-         style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <text
          sodipodi:linespacing="125%"
          id="text4201-4-1"
          y="416.04572"
          x="250.28308"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            y="416.04572"
            x="250.28308"
            id="tspan4203-9-7"
-           sodipodi:role="line">0px</tspan></text>
+           sodipodi:role="line">-50px</tspan></text>
       <text
          sodipodi:linespacing="125%"
          id="text4201-5-6-6"
          y="416.04572"
          x="354.24011"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            y="416.04572"
            x="354.24011"
            id="tspan4203-2-6-6"
-           sodipodi:role="line">300px</tspan></text>
+           sodipodi:role="line">50px</tspan></text>
       <path
          inkscape:connector-curvature="0"
          id="path4230-4-8"
          d="m 334.78961,405.40055 -66,0 z"
-         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow2Mend)" />
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Mend)" />
       <text
          sodipodi:linespacing="125%"
          id="text5534-2-8"
          y="445.4549"
          x="416.32996"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
          xml:space="preserve"><tspan
            style="font-size:20px"
            y="445.4549"
@@ -369,9 +488,9 @@
          id="text5534-2-1-8"
          y="377.81815"
          x="248.8866"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-size:20px;-inkscape-font-specification:Sans;text-align:end;text-anchor:end"
+           style="font-size:20px;font-style:normal;text-align:end;text-anchor:end;-inkscape-font-specification:Sans"
            y="377.81815"
            x="248.8866"
            id="tspan5536-1-6-8"
@@ -381,197 +500,645 @@
          id="text5534-2-1-7-3"
          y="377.81815"
          x="356.46667"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-size:20px;-inkscape-font-specification:Sans;text-align:start;text-anchor:start"
+           style="font-size:20px;font-style:normal;text-align:start;text-anchor:start;-inkscape-font-specification:Sans"
            y="377.81815"
            x="356.46667"
            id="tspan5536-1-6-6-5"
            sodipodi:role="line">add</tspan></text>
     </g>
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutS)"
-       d="m 551.27332,213.84648 0,42.29881"
+       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutS)"
+       d="m 428.23674,-1152.8696 0,42.2988"
        id="path9762"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="762.10803"
-       y="143.65271"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="639.07147"
+       y="-1223.0634"
        id="text11635"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
          sodipodi:role="line"
-         x="762.10803"
-         y="143.65271"
+         x="639.07147"
+         y="-1223.0634"
          id="tspan11639"
-         style="font-size:20px">t=0.5</tspan><tspan
+         style="font-size:20px">t=0.25</tspan><tspan
          sodipodi:role="line"
-         x="762.10803"
-         y="168.65271"
+         x="639.07147"
+         y="-1198.0634"
          id="tspan11643"
-         style="font-size:20px">value=150px</tspan></text>
+         style="font-size:20px">value=200px</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       x="762.10803"
-       y="319.73233"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="639.07147"
+       y="-1044.9838"
        id="text11635-5"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
          sodipodi:role="line"
-         x="762.10803"
-         y="319.73233"
+         x="639.07147"
+         y="-1044.9838"
          id="tspan11639-9"
-         style="font-size:20px">t=0.5</tspan><tspan
+         style="font-size:20px">t=1</tspan><tspan
          sodipodi:role="line"
-         x="762.10803"
-         y="344.73233"
+         x="639.07147"
+         y="-1019.9838"
          id="tspan11643-4"
-         style="font-size:20px">value=150px</tspan></text>
+         style="font-size:20px">value=50px</tspan></text>
     <rect
        ry="29.767525"
-       y="-83.424721"
-       x="348.0535"
+       y="-1450.1407"
+       x="225.01692"
        height="115.64579"
        width="406.53577"
        id="rect3538"
-       style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
        inkscape:export-xdpi="163.96606"
        inkscape:export-ydpi="163.96606" />
     <text
        sodipodi:linespacing="125%"
        id="text3540"
-       y="-8.9182463"
-       x="612.51276"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+       y="-1375.6343"
+       x="429.59335"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
        inkscape:export-xdpi="163.96606"
        inkscape:export-ydpi="163.96606"><tspan
-         y="-8.9182463"
-         x="612.51276"
+         y="-1375.6343"
+         x="429.59335"
          id="tspan3542"
          sodipodi:role="line">100px</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3550"
-       y="14.490926"
-       x="663.84674"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       y="-1352.2251"
+       x="540.81018"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
        inkscape:export-xdpi="163.96606"
        inkscape:export-ydpi="163.96606"><tspan
          style="font-size:20px"
-         y="14.490926"
-         x="663.84674"
+         y="-1352.2251"
+         x="540.81018"
          id="tspan3552"
          sodipodi:role="line">length</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text3596"
-       y="-32.760029"
-       x="762.10803"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       y="-1411.8003"
+       x="639.07147"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
        inkscape:export-xdpi="163.96606"
        inkscape:export-ydpi="163.96606"><tspan
          style="font-size:20px"
          id="tspan3598"
-         y="-32.760029"
-         x="762.10803"
-         sodipodi:role="line">t=0.5</tspan><tspan
+         y="-1411.8003"
+         x="639.07147"
+         sodipodi:role="line" /><tspan
          style="font-size:20px"
          id="tspan3600"
-         y="-7.7600279"
-         x="762.10803"
+         y="-1386.8003"
+         x="639.07147"
          sodipodi:role="line">value=100px</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4124"
-       d="m 551.27332,37.312435 0,42.29881"
-       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutS)" />
+       d="m 428.23674,-1329.4036 0,42.2988"
+       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutS)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
     <text
        sodipodi:linespacing="125%"
        id="text4155"
-       y="334.17081"
-       x="339.48111"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+       y="-1030.5453"
+       x="216.44453"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-1.png"
        inkscape:export-xdpi="163.96606"
        inkscape:export-ydpi="163.96606"><tspan
          style="font-size:20px;text-align:end;text-anchor:end"
          id="tspan4157"
-         y="334.17081"
-         x="339.48111"
+         y="-1030.5453"
+         x="216.44453"
          sodipodi:role="line">UF=1</tspan></text>
     <text
        inkscape:export-ydpi="163.96606"
        inkscape:export-xdpi="163.96606"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
-       x="339.48111"
-       y="158.09117"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="216.44453"
+       y="-1208.6249"
        id="text4159"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="339.48111"
-         y="158.09117"
+         x="216.44453"
+         y="-1208.6249"
          id="tspan4161"
-         style="font-size:20px;text-align:end;text-anchor:end">UF=1</tspan></text>
+         style="font-size:20px;text-align:end;text-anchor:end">UF=0.75</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path4185"
-       d="m 551.27332,389.84648 0,42.29881"
-       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#TriangleOutS)" />
+       d="m 428.23674,-974.86957 0,42.29881"
+       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutS)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
     <text
        sodipodi:linespacing="125%"
        id="text4187"
-       y="67.945465"
-       x="569.16461"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       y="-1298.7706"
+       x="446.12802"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
        inkscape:export-xdpi="163.96606"
        inkscape:export-ydpi="163.96606"><tspan
          style="font-size:20px;text-align:start;text-anchor:start"
          id="tspan4189"
-         y="67.945465"
-         x="569.16461"
+         y="-1298.7706"
+         x="446.12802"
          sodipodi:role="line">100px</tspan></text>
     <text
        inkscape:export-ydpi="163.96606"
        inkscape:export-xdpi="163.96606"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-2.png"
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       x="569.89703"
-       y="243.30794"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="446.86044"
+       y="-1123.4081"
        id="text4191"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="569.89703"
-         y="243.30794"
+         x="446.86044"
+         y="-1123.4081"
          id="tspan4193"
-         style="font-size:20px;text-align:start;text-anchor:start">(100*1 + 150)px = 250px</tspan></text>
+         style="font-size:20px;text-align:start;text-anchor:start">(100*0.75 + 200)px = 275px</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4216"
-       y="421.49884"
-       x="570.38531"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       y="-943.21722"
+       x="447.34872"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        xml:space="preserve"
-       inkscape:export-filename="/Users/george/Code/additive-animations-slides/images/pipeline-new-3.png"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-example-1.png"
        inkscape:export-xdpi="163.96606"
        inkscape:export-ydpi="163.96606"><tspan
          style="font-size:20px;text-align:start;text-anchor:start"
          id="tspan4218"
-         y="421.49884"
-         x="570.38531"
-         sodipodi:role="line">(250*1 + 150)px = 400px</tspan></text>
+         y="-943.21722"
+         x="447.34872"
+         sodipodi:role="line">(400*1 + 50)px = 450px</tspan></text>
+    <g
+       id="g6330-0"
+       transform="translate(149.29685,-837.28632)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606">
+      <rect
+         ry="29.767525"
+         y="207.53931"
+         x="100.53668"
+         height="115.64579"
+         width="406.53577"
+         id="rect5538-4-8"
+         style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4201-4-2"
+         y="276.04578"
+         x="250.28308"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="276.04578"
+           x="250.28308"
+           id="tspan4203-9-3"
+           sodipodi:role="line">30px</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4201-5-6-5"
+         y="276.04578"
+         x="354.24011"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="276.04578"
+           x="354.24011"
+           id="tspan4203-2-6-5"
+           sodipodi:role="line">40px</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4230-4-1"
+         d="m 334.7896,265.40061 -66,0 z"
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-mid:none;marker-end:url(#Arrow2Mend)" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5534-2-6"
+         y="305.45496"
+         x="416.32996"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px"
+           y="305.45496"
+           x="416.32996"
+           id="tspan5536-1-62"
+           sodipodi:role="line">length</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5534-2-1-5"
+         y="237.81821"
+         x="248.8866"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-style:normal;text-align:end;text-anchor:end;-inkscape-font-specification:Sans"
+           y="237.81821"
+           x="248.8866"
+           id="tspan5536-1-6-5"
+           sodipodi:role="line">add</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5534-2-1-7-5"
+         y="237.81821"
+         x="356.34949"
+         style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-style:normal;text-align:start;text-anchor:start;-inkscape-font-specification:Sans"
+           y="237.81821"
+           x="356.34949"
+           id="tspan5536-1-6-6-0"
+           sodipodi:role="line">add</tspan></text>
+    </g>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutS)"
+       d="m 453.05336,-508.88862 0,42.2988"
+       id="path9762-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="663.88812"
+       y="-579.08246"
+       id="text11635-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         sodipodi:role="line"
+         x="663.88812"
+         y="-579.08246"
+         id="tspan11639-5"
+         style="font-size:20px">t=0.5</tspan><tspan
+         sodipodi:role="line"
+         x="663.88812"
+         y="-554.08246"
+         id="tspan11643-2"
+         style="font-size:20px">value=35px</tspan></text>
+    <rect
+       ry="29.767525"
+       y="-806.15985"
+       x="249.83356"
+       height="115.64579"
+       width="406.53577"
+       id="rect3538-6"
+       style="fill:#95ffe5;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3540-9"
+       y="-731.65338"
+       x="454.40997"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         y="-731.65338"
+         x="454.40997"
+         id="tspan3542-9"
+         sodipodi:role="line">2</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3550-9"
+       y="-708.2442"
+       x="625.81238"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         style="font-size:20px;text-align:end;text-anchor:end"
+         y="-708.2442"
+         x="625.81238"
+         id="tspan3552-5"
+         sodipodi:role="line">number</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3596-8"
+       y="-767.8194"
+       x="663.88812"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         style="font-size:20px"
+         id="tspan3598-1"
+         y="-767.8194"
+         x="663.88812"
+         sodipodi:role="line" /><tspan
+         style="font-size:20px"
+         id="tspan3600-3"
+         y="-742.8194"
+         x="663.88812"
+         sodipodi:role="line">value=2</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4124-5"
+       d="m 453.05336,-685.42262 0,42.2988"
+       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutS)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <text
+       inkscape:export-ydpi="163.96606"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-1.png"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="241.26117"
+       y="-564.64398"
+       id="text4159-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="241.26117"
+         y="-564.64398"
+         id="tspan4161-4"
+         style="font-size:20px;text-align:end;text-anchor:end">UF=1</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4187-7"
+       y="-654.78973"
+       x="470.94464"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         style="font-size:20px;text-align:start;text-anchor:start"
+         id="tspan4189-5"
+         y="-654.78973"
+         x="470.94464"
+         sodipodi:role="line">2</tspan></text>
+    <text
+       inkscape:export-ydpi="163.96606"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-1.png"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="471.67706"
+       y="-479.42715"
+       id="text4191-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="471.67706"
+         y="-479.42715"
+         id="tspan4193-7"
+         style="font-size:20px;text-align:start;text-anchor:start">2*1 + 35px = ???</tspan></text>
+    <g
+       id="g5783"
+       transform="matrix(1.2945164,0,0,0.85606197,135.40727,-980.92366)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-bad-2.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5763"
+         d="m 82,555.36218 317,-153 z"
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5763-6"
+         d="m 399,555.36218 -317,-153 z"
+         style="fill:#ff0000;stroke:#ff0000;stroke-width:13;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <rect
+       style="fill:#ccffaa;fill-opacity:1;stroke:#000000;stroke-width:3.46423745000000016;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect5538-4-1"
+       width="406.53577"
+       height="115.64579"
+       x="235.69139"
+       y="-173.05153"
+       ry="29.767525"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="486.73267"
+       y="-104.54507"
+       id="text4201-4-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         sodipodi:role="line"
+         id="tspan4203-9-4"
+         x="486.73267"
+         y="-104.54507">auto</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="611.67023"
+       y="-75.135887"
+       id="text5534-2-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         sodipodi:role="line"
+         id="tspan5536-1-0"
+         x="611.67023"
+         y="-75.135887"
+         style="font-size:20px;text-align:end;text-anchor:end">generic</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="460.94653"
+       y="-142.77263"
+       id="text5534-2-1-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         sodipodi:role="line"
+         id="tspan5536-1-6-1"
+         x="460.94653"
+         y="-142.77263"
+         style="font-size:20px;font-style:normal;text-align:end;text-anchor:end;-inkscape-font-specification:Sans">add</tspan></text>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutS)"
+       d="m 438.91124,-52.193145 0,42.2988"
+       id="path9762-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="649.74603"
+       y="-134.71106"
+       id="text11635-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         sodipodi:role="line"
+         x="649.74603"
+         y="-134.71106"
+         id="tspan11639-0"
+         style="font-size:20px" /><tspan
+         sodipodi:role="line"
+         x="649.74603"
+         y="-109.71106"
+         id="tspan11643-7"
+         style="font-size:20px">value=auto</tspan></text>
+    <rect
+       ry="29.767525"
+       y="-349.46432"
+       x="235.69142"
+       height="115.64579"
+       width="406.53577"
+       id="rect3538-5"
+       style="fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:3.46423745;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3540-6"
+       y="-274.95786"
+       x="440.26782"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         y="-274.95786"
+         x="440.26782"
+         id="tspan3542-6"
+         sodipodi:role="line">100px</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3550-2"
+       y="-251.54869"
+       x="551.48468"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         style="font-size:20px"
+         y="-251.54869"
+         x="551.48468"
+         id="tspan3552-3"
+         sodipodi:role="line">length</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3596-82"
+       y="-311.12387"
+       x="649.74603"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         style="font-size:20px"
+         id="tspan3598-5"
+         y="-311.12387"
+         x="649.74603"
+         sodipodi:role="line" /><tspan
+         style="font-size:20px"
+         id="tspan3600-1"
+         y="-286.12387"
+         x="649.74603"
+         sodipodi:role="line">value=100px</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4124-4"
+       d="m 438.91124,-228.72714 0,42.2988"
+       style="fill:#000000;stroke:#000000;stroke-width:8.65866661;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#TriangleOutS)"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <text
+       inkscape:export-ydpi="163.96606"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="227.11903"
+       y="-107.94847"
+       id="text4159-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="227.11903"
+         y="-107.94847"
+         id="tspan4161-0"
+         style="font-size:20px;text-align:end;text-anchor:end">UF=1</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4187-0"
+       y="-198.09422"
+       x="456.80249"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606"><tspan
+         style="font-size:20px;text-align:start;text-anchor:start"
+         id="tspan4189-7"
+         y="-198.09422"
+         x="456.80249"
+         sodipodi:role="line">100px</tspan></text>
+    <path
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:13.68515490999999962;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.4292683;stroke-dasharray:none"
+       d="M 233.77842,-49.739898 644.14012,-180.71738 z"
+       id="path5763-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
+    <path
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:13.68515490999999962;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.4292683;stroke-dasharray:none"
+       d="M 644.14012,-49.739898 233.77842,-180.71738 z"
+       id="path5763-6-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/usr/local/google/home/caley/additive-animations-slides/images/pipeline-auto-1.png"
+       inkscape:export-xdpi="163.96606"
+       inkscape:export-ydpi="163.96606" />
   </g>
 </svg>
