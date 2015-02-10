@@ -978,8 +978,8 @@ box.animate([
     <article>
       <ul>
         <li>Incompatible values</li>
-        <li><code>inherit</code></li>
         <li>Cubic Bezier easing</li>
+        <li><code>inherit</code></li>
       </ul>
     </article>
   </slide>
@@ -1037,39 +1037,11 @@ text.animate([
     <article>
       <ul>
         <li>We just ignore attempts to add on incompatible values</li>
-        <li>This behaviour was decided on through discussions, and isn't actually reflected in the spec yet</li>
+        <li>This behaviour was decided on through discussions with the spec authors, but isn't yet reflected in the spec</li>
       </ul>
       <div class="pipeline-container">
         <img src="images/pipeline-bad-2.png" width="500px">
       </div>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2><code>inherit</code></h2>
-    </hgroup>
-    <article>
-      <pre class="prettyprint" data-lang="HTML">
-&lt;style&gt;
-  #parent { line-height: 2; }
-  #child { line-height: inherit; }
-&lt;/style&gt;
-&lt;div id="parent"&gt;
-  &lt;div id="child"&gt;
-    Hello, World!
-  &lt;/div&gt;
-&lt;/div&gt;</pre>
-      <ul>
-        <li>The <code>inherit</code> keyword resolves to the element's parent's value</li>
-        <li>The value (and type) of <code>inherit</code> is only known at apply time</li>
-        <li>
-          The <code>InterpolableValue</code> code path doesn't support <code>inherit</code> yet, so adding with <code>inherit</code> isn't yet possible
-          <ul>
-            <li>The old code path supports <code>inherit</code> by deferring the creation of 'interpolations' using the keyword until apply time</li>
-          </ul>
-        </li>
-      </ul>
     </article>
   </slide>
 
@@ -1126,7 +1098,7 @@ box.animate([
     </hgroup>
     <article>
       <ul>
-        <li>Cubic Beziers can have 0 or 2 turning points</li>
+        <li>Cubic Beziers can have 0-2 turning points</li>
       </ul>
       <div>
         <pre class="prettyprint" data-lang="HTML" style="width: 80%; float: left">
@@ -1303,6 +1275,34 @@ element.animate([
 
   <slide>
     <hgroup>
+      <h2><code>inherit</code></h2>
+    </hgroup>
+    <article>
+      <pre class="prettyprint" data-lang="HTML">
+&lt;style&gt;
+  #parent { line-height: 2; }
+  #child { line-height: inherit; }
+&lt;/style&gt;
+&lt;div id="parent"&gt;
+  &lt;div id="child"&gt;
+    Hello, World!
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      <ul>
+        <li>The <code>inherit</code> keyword resolves to the element's parent's value</li>
+        <li>The value (and type) of <code>inherit</code> is only known at apply time</li>
+        <li>
+          The <code>InterpolableValue</code> code path doesn't support <code>inherit</code> yet, so adding with <code>inherit</code> isn't yet possible
+          <ul>
+            <li>The old code path supports <code>inherit</code> by deferring the creation of 'interpolations' using the keyword until apply time</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
       <h2>Status of additive animations</h2>
     </hgroup>
     <article>
@@ -1325,9 +1325,10 @@ element.animate([
         <li>
           What's next
           <ul>
-            <li>Implement additive animations for other types</li>
+            <li>Implement additive animations for other simple types</li>
             <li>Benchmarking</li>
             <li>Ship additive animations support</li>
+            <li>Implement composited additive animations?</li>
           </ul>
         </li>
       </ul>
@@ -1338,7 +1339,6 @@ element.animate([
     <aside class="gdbar right"><img src="images/chrome-logo-128.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <h2>Thanks!</h2>
-      <p>hi tim</p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
